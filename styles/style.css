@@ -50,53 +50,10 @@ body{
     border: 1px black solid;
     font-family: "Montserrat", sans-serif;
     }
-
-    /* tarjetas*/ 
-
-.cardbox {
-    margin: 80px ;
-    font-family: "Libre Baskerville", serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
+.nav-item:hover{
+    color:darkblue ;
 }
 
-.cardbox1 {
-    margin: 80px ;
-    font-family: "Libre Baskerville", serif;
-    font-size: 36px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
-}
-
-.cardbox_div{
-    border: 1px solid black;
-    width: 300px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-}
-
-.cardbox_div img {
-    width: 60%;
-    align-items: center;
-}
-
-.cardbox_div h3 {
-    margin: 1px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-
-}
 
 /*Slide*/
 
@@ -131,7 +88,7 @@ body{
 /*Texto secundario*/
 
 h2 {
-    color: #d67747 ;
+    color:#6B553D ;
    /* margin-top: 16px;
     margin-right: 14px;
     margin-bottom: 12px;
@@ -146,7 +103,7 @@ h3 {
 }
 
 p{
-    padding: 8px 8px 8px 8px;
+    padding: 2px 2px 2px 2px;
 }
 /*Volver arriba*/
 
@@ -159,6 +116,21 @@ p{
     border-radius: 8px;
 }
 
+.div-cambio{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.nav-link:hover{
+    color: #d67747;
+}
 /* Redes */
 
 footer{
