@@ -29,12 +29,32 @@ body{
     padding: 16px;
 }
 
-.img_logo {
-    padding: 5px;
-    width: 10%;
+.container-fluid{
+    background-color: #d67747;
+}
+
+.img-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 2px;
+    width: 8git%;
     /*border: 2px solid #d67747;*/
 }
 
+.btn-buscar{
+    margin: 2px;
+    padding: 4px;
+    color: black;
+    background-color: #A87008;
+    border: 1px black solid;
+    font-family: "Montserrat", sans-serif;
+    }
+
+
+
+
+/* NUEVA NAV 
 .container-fluid{
     display: flex;
     flex-direction: row;
@@ -94,7 +114,7 @@ body{
     align-content: end;
 }
 
-
+*/
 
 /*.cont_nav {
    /* border: 2px solid #6B553D;*/
