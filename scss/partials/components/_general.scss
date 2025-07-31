@@ -1,0 +1,94 @@
+form {
+  /*  margin: 50px;
+    padding: 50px;*/
+    width: 50%;
+    height: 50%;
+    
+}   
+
+.row{
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;    
+    justify-items: center;
+}
+
+/*Slide*/
+
+.container-carousel {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-wrapper {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/*Texto secundario*/
+
+h2 {
+    color:#6B553D ;
+   /* margin-top: 16px;
+    margin-right: 14px;
+    margin-bottom: 12px;
+    margin-left: 10px; */
+    margin: 16px 14px 12px 10px;
+    text-decoration: underline;
+}
+
+h3 {
+    color: #6B553D;
+
+}
+
+p{
+    padding: 2px 2px 2px 2px;
+}
+/*Volver arriba*/
+
+.Ver{
+    color: #6B553D;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.div-cambio{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.nav-link:hover{
+    color: #d67747;
+}

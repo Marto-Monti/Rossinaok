@@ -1,0 +1,30 @@
+/*Barra de navegacion*/ 
+
+.header{
+    padding: 16px;
+}
+
+.container-fluid{
+    background-color: #d67747;
+}
+
+.img-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 2px;
+    width: 8%;
+    /*border: 2px solid #d67747;*/
+}
+
+.btn-buscar{
+    margin: 2px;
+    padding: 4px;
+    color: black;
+    background-color: #A87008;
+    border: 1px black solid;
+    font-family: "Montserrat", sans-serif;
+    }
+.nav-item:hover{
+    color:darkblue ;
+}
