@@ -1,11 +1,13 @@
 /* Redes */
 
 footer{
+    padding: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 6px;
     text-align: center;
+    flex-wrap: wrap;
 
 }
 
@@ -19,7 +21,7 @@ footer{
     margin: 4px; 
     padding: 8px;
     border-radius: 8px;
-    width: 20%;
+    width: 100%;
     align-self: center;
     /*align-items: center;*/
     
