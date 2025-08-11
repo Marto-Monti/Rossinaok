@@ -1,40 +1,46 @@
 /* Redes */
 
-footer{
-    padding: 100vh;
+.foot-mio{
+    padding: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6px;
-    text-align: center;
-    flex-wrap: wrap;
+    align-items: center;
+    p{
+        font-family: "Libre Baskerville", serif;
+        padding: 8px;
+        margin: 8px;
+    }
+        a {
+        padding: 8px;
+        margin: 2px;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: #6B553D;
+        text-align: center;
+        align-self: center;
+        &:hover{
+            color:#d67747
+            }
+        img{
+            padding: 3px;
+        }
 
+    }
+  }
+
+figure{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .imgfoot{
+        width: 50%;
+    }
 }
 
-.ig{
-    display: flex;
-    flex-direction: column;
-    color: #6B553D;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid black;
-    margin: 4px; 
-    padding: 8px;
-    border-radius: 8px;
-    width: 100%;
-    align-self: center;
-    /*align-items: center;*/
+  
     
 
-}
 
-.imgfoot{
-    padding: 5px;
-    width: 20%;
-    display: flex;
-    align-self: center;
-}
 
-.ig:hover{
-    color:#d67747
-}

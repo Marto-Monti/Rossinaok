@@ -16,7 +16,10 @@ form {
     justify-items: center;
 }
 
-h1{
+.titular{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   padding: 32px;
 }
 

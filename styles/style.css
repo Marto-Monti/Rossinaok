@@ -7,40 +7,42 @@
 /*  font-family: "Libre Baskerville", serif; */
 /*  font-family: "Montserrat", sans-serif; */
 /* Redes */
-footer {
-  padding: 100vh;
+.foot-mio {
+  padding: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 6px;
-  text-align: center;
-  flex-wrap: wrap;
+  align-items: center;
 }
-
-.ig {
+.foot-mio p {
+  font-family: "Libre Baskerville", serif;
+  padding: 8px;
+  margin: 8px;
+}
+.foot-mio a {
+  padding: 8px;
+  margin: 2px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  text-decoration: none;
   color: #6B553D;
   text-align: center;
-  text-decoration: none;
-  border: 1px solid black;
-  margin: 4px;
-  padding: 8px;
-  border-radius: 8px;
-  width: 100%;
-  align-self: center;
-  /*align-items: center;*/
-}
-
-.imgfoot {
-  padding: 5px;
-  width: 20%;
-  display: flex;
   align-self: center;
 }
-
-.ig:hover {
+.foot-mio a:hover {
   color: #d67747;
+}
+.foot-mio a img {
+  padding: 3px;
+}
+
+figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+figure .imgfoot {
+  width: 50%;
 }
 
 form {
@@ -60,7 +62,10 @@ form {
   justify-items: center;
 }
 
-h1 {
+.titular {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   padding: 32px;
 }
 
@@ -140,19 +145,17 @@ p {
 }
 
 .card-container {
-  width: 200vh;
-  height: 75vh;
+  margin: 16px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  gap: 8px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 .card-container .card {
-  width: 50vh;
-  margin: 8px;
-  padding: 8px;
+  width: 40vh;
+  border: 1px solid #D67747;
+  border-radius: 3px;
+  padding: 16px;
 }
 .card-container .card .img-card {
   width: 70%;
@@ -164,13 +167,17 @@ p {
   font-size: 1rem;
 }
 .card-body .btn-edit {
+  display: flex;
+  justify-content: center;
   font-family: "Libre Baskerville", serif;
+  font-size: 1rem;
   color: black;
   text-decoration: none;
   background-color: #D67747;
 }
 .card-body .btn-edit:hover {
   background-color: #E8CFC1;
+  color: #A87008;
 }
 
 /*# sourceMappingURL=style.css.map */

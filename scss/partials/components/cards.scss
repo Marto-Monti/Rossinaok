@@ -1,18 +1,16 @@
 @use "../utilities/variables";
 
 .card-container{
-    width: 200vh;
-    height: 75vh;
+    margin: 16px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    gap: 8px;
+    gap: 24px;
     flex-wrap: wrap;
     .card{
-        width: 50vh;
-        margin: 8px;
-        padding: 8px;
+        width: 40vh;
+        border: 1px solid variables.$c-rosita;
+        border-radius: 3px;
+        padding: 16px;
         .img-card {
             width: 70%;
             align-self: center;
@@ -25,12 +23,16 @@
             font-family: "Montserrat", sans-serif;
             font-size: 1rem;
             .btn-edit {
+            display: flex;
+            justify-content: center;
             font-family: "Libre Baskerville", serif;
+            font-size: 1rem;
             color: black;
             text-decoration: none;
             background-color: variables.$c-rosita;
             &:hover{
                     background-color: variables.$c-clarito;
+                    color: variables.$c-mostaza;
         }
     }
 }

@@ -18,7 +18,6 @@
  <!-- Título principal y barra de navegación -->   
  <header>
 
-  
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,13 +51,17 @@
     </div>
   </nav>
            
- </header>
-  <main>
- <!-- Sección Produtos destacados -->
+</header>
 
-  <h1>Destacados del mes</h1>
-  <section class="card-container">
-    <div class="card">
+<main>
+
+ <!-- Sección Productos destacados -->
+  <div class="titular">
+    <h1>Destacados del mes</h1>
+  </div>  
+ 
+  <section class="card-container">  
+   <div class="card">
       <figure class="img-card">
         <img src="./assets/cover2.jpeg" class="card-img" alt="...">
       </figure>
@@ -67,9 +70,9 @@
         <p class="card-text">100% algodón, para darle estilo a tu habitación</p>
         <a href="#" class="btn btn-edit">Ver detalles</a>
       </div>
-    </div>
+   </div>
 
-    <div class="card">
+   <div class="card">
       <figure class="img-card">
       <img src="./assets/centro1.jpeg" class="card-img" alt="...">
       </figure>
@@ -78,7 +81,7 @@
       <p class="card-text">Sutiles y delicadas fundas para decorar y darle vida a tu mesa</p>
       <a href="#" class="btn btn-edit">Ver detalles</a>
       </div>
-    </div>
+   </div>
 
     <div class="card">
       <figure class="img-card">
@@ -104,18 +107,23 @@
 
   </section>   
 
-  </main>
+</main>
 
 <!-- Pie de página -->
 
-    <footer>
+  <footer>
 
-        <p>Escribinos al WhatsApp y seguinos en nuestras redes sociales</p>
-        <a href="https://www.instagram.com/rossinadeco" class="ig" target="_blank">Instagram</a>
-        <p>2025. Todos los derechos reservados</p> 
-        <img class= imgfoot src="./assets/logorossina.jpg">
+  <section class="foot-mio">
+    <p>Escribinos al WhatsApp y seguinos en nuestras redes sociales</p>
+    <a href="https://www.whatsappweb.com">  WhatsApp  <img src="./assets/whatsapp.svg" alt=""></a>
+    <a href="https://www.instagram.com/rossinadeco" class="ig" target="_blank">  Instagram  <img src="./assets/instagram.svg" alt=""></a>
+    <p>2025. Todos los derechos reservados</p>
+    <figure> 
+      <img class= imgfoot src="./assets/logorossina.jpg">
+    </figure>
+  </section>
      
-    </footer>
+  </footer>
 
     <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> 
