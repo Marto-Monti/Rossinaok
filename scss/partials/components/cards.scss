@@ -1,10 +1,20 @@
-.cont.cards{
+@use "../utilities/variables";
+
+.card-container{
+    width: 90rem;
+    height: 36rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-        
+    justify-content: space-evenly;
+
 }
 
-.card-box1{
-    width: 18rem;
+.card{
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    .card-img{
+        width: 50%;
+        align-self: center;
+    }
 }

@@ -1,3 +1,4 @@
+@use "../utilities/variables";
 /*Barra de navegacion*/ 
 
 .header{
@@ -5,7 +6,7 @@
 }
 
 .container-fluid{
-    background-color: #A87008;
+    background-color: variables.$c-clarito;
 }
 
 .img-brand {
