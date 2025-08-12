@@ -1,31 +1,40 @@
 @use "../utilities/variables";
+
 /*Barra de navegacion*/ 
 
-.header{
-    padding: 16px;
+header {
+    padding: 2px;
+    .bg-marto{
+        background-color: variables.$c-clarito;
 }
-
+}
 .container-fluid{
-    background-color: variables.$c-clarito;
+    //background-color: variables.$c-clarito;
 }
 
 .img-brand {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    padding: 2px;
     width: 8%;
-    /*border: 2px solid #d67747;*/
+    padding: 2px;
+       
 }
 
-.btn-buscar{
+.btn-buscar {
     margin: 2px;
     padding: 4px;
     color: black;
-    background-color: #A87008;
-    border: 1px black solid;
-    font-family: "Montserrat", sans-serif;
+    background-color: variables.$c-gris;
+    border: 0.5px black solid;
+    font-family: "Libre Baskerville", serif;
+    &:hover{
+        background-color: variables.$c-clarito;
     }
-.nav-item:hover{
-    color:darkblue ;
+}
+
+.bg-marto{
+    a{
+    color: variables.$c-gris;
+    &:hover{
+    color: variables.$c-mostaza ;
+    }
+  }
 }

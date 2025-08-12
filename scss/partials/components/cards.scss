@@ -1,28 +1,36 @@
 @use "../utilities/variables";
 
 .card-container{
-    margin: 16px;
+    
+    padding: 24px;
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    justify-content: space-between;
+    gap: 16px;
     flex-wrap: wrap;
     .card{
         width: 40vh;
-        border: 1px solid variables.$c-rosita;
+        border: 1px solid grey;
         border-radius: 3px;
-        padding: 16px;
+        padding: 8px;
         .img-card {
             width: 70%;
+            padding: 8px;
             align-self: center;
             
         }
     }
 }           
 
+
 .card-body {
-            font-family: "Montserrat", sans-serif;
-            font-size: 1rem;
-            .btn-edit {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    .card-text {
+        font-size: 1rem;
+    }
+
+.btn-edit {
             display: flex;
             justify-content: center;
             font-family: "Libre Baskerville", serif;
@@ -31,11 +39,12 @@
             text-decoration: none;
             background-color: variables.$c-rosita;
             &:hover{
-                    background-color: variables.$c-clarito;
-                    color: variables.$c-mostaza;
+                background-color: variables.$c-clarito;
+                color: variables.$c-mostaza;
+            }
         }
     }
-}
+
          
 
 

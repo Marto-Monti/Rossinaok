@@ -1,7 +1,16 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*$container-max-widths: (
+  sm: 480px,
+  lg: 1024px,
+  );*/
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #FFF3E1;
 }
 
 /*  font-family: "Libre Baskerville", serif; */
@@ -45,21 +54,9 @@ figure .imgfoot {
   width: 50%;
 }
 
-form {
-  /*  margin: 50px;
-    padding: 50px;*/
-  width: 50%;
-  height: 50%;
-}
-
-.row {
-  margin: 10px;
-  padding: 10px;
-  width: 50%;
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
+h1 {
+  padding: 36px;
+  text-align: center;
 }
 
 .titular {
@@ -69,101 +66,185 @@ form {
   padding: 32px;
 }
 
-/*Texto secundario*/
-h2 {
+/*Página historia*/
+.historia {
+  margin: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.historia h2 {
   color: #6B553D;
-  /* margin-top: 16px;
-   margin-right: 14px;
-   margin-bottom: 12px;
-   margin-left: 10px; */
   margin: 16px 14px 12px 10px;
-  text-decoration: underline;
-}
-
-h3 {
-  color: #6B553D;
-}
-
-p {
-  padding: 2px 2px 2px 2px;
-}
-
-/*Volver arriba*/
-.Ver {
-  color: #6B553D;
   text-decoration: none;
-  display: inline-block;
-  border: 1px solid black;
+}
+
+figure {
+  padding: 16px;
+}
+
+img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+}
+
+/* página productos*/
+.productos {
+  margin: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.productos .h2-prod {
+  margin: 8px;
   padding: 8px;
-  border-radius: 8px;
+}
+
+.volver-arriba {
+  margin: 8px;
+  padding: 8px;
+  text-decoration: none;
+  color: #3A2812;
+}
+.volver-arriba:hover {
+  color: #A87008;
+}
+
+.formu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.formu .formulario-marto {
+  margin: 35px;
+  padding: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+}
+.formu .formulario-marto .btn-formu {
+  margin: 2px;
+  padding: 4px;
+  color: black;
+  background-color: #6B553D;
+  border: 0.5px black solid;
+  font-family: "Libre Baskerville", serif;
+}
+.formu .formulario-marto .btn-formu:hover {
+  background-color: #E8CFC1;
+}
+
+/* página Cambios & FAQ´S*/
+.sec-cambios {
+  margin: 8px;
+  padding: 16px;
 }
 
 .div-cambio {
   display: flex;
-  flex-direction: row;
 }
 
-.nav-link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.cambio-hover {
+  padding: 1px;
+  color: #A87008;
+}
+.cambio-hover:hover {
+  color: #E8CFC1;
 }
 
-.nav-link:hover {
-  color: #d67747;
+.faq {
+  width: 70%;
+  margin: 12px;
+  padding: 12px;
+}
+
+.accordion-marto {
+  --bs-accordion-color: var(--bs-body-color);
+  --bs-accordion-bg: var(--bs-body-bg);
+  --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+  --bs-accordion-border-color: var(--bs-border-color);
+  --bs-accordion-border-width: var(--bs-border-width);
+  --bs-accordion-border-radius: var(--bs-border-radius);
+  --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  --bs-accordion-btn-padding-x: 1.25rem;
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-color: var(--bs-body-color);
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon-width: 1.25rem;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-accordion-body-padding-x: 1.25rem;
+  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-active-color: var(--bs-primary-text-emphasis);
+  --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+.accordion-marto .acc-marto {
+  background-color: #A87008;
 }
 
 /*Barra de navegacion*/
-.header {
-  padding: 16px;
+header {
+  padding: 2px;
 }
-
-.container-fluid {
+header .bg-marto {
   background-color: #E8CFC1;
 }
 
 .img-brand {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  padding: 2px;
   width: 8%;
-  /*border: 2px solid #d67747;*/
+  padding: 2px;
 }
 
 .btn-buscar {
   margin: 2px;
   padding: 4px;
   color: black;
-  background-color: #A87008;
-  border: 1px black solid;
-  font-family: "Montserrat", sans-serif;
+  background-color: #6B553D;
+  border: 0.5px black solid;
+  font-family: "Libre Baskerville", serif;
+}
+.btn-buscar:hover {
+  background-color: #E8CFC1;
 }
 
-.nav-item:hover {
-  color: darkblue;
+.bg-marto a {
+  color: #6B553D;
+}
+.bg-marto a:hover {
+  color: #A87008;
 }
 
 .card-container {
-  margin: 16px;
+  padding: 24px;
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  justify-content: space-between;
+  gap: 16px;
   flex-wrap: wrap;
 }
 .card-container .card {
   width: 40vh;
-  border: 1px solid #D67747;
+  border: 1px solid grey;
   border-radius: 3px;
-  padding: 16px;
+  padding: 8px;
 }
 .card-container .card .img-card {
   width: 70%;
+  padding: 8px;
   align-self: center;
 }
 
 .card-body {
   font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+.card-body .card-text {
   font-size: 1rem;
 }
 .card-body .btn-edit {
