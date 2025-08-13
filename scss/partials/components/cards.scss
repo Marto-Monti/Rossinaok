@@ -25,9 +25,9 @@ h5{
             align-self: center;
                 
               }
-            }
-          }  
         }
+    }  
+}
     
 
 
@@ -42,19 +42,19 @@ h5{
 .btn-detalles{
     @include mixins.flex(row, center, center);    
     .btn-edit {
-            display: flex;
-            justify-content: center;
-            font-family: "Libre Baskerville", serif;
-            font-size: 1rem;
-            color: black;
-            text-decoration: none;
-            background-color: variables.$c-rosita;
-            &:hover{
-                background-color: variables.$c-clarito;
-                color: variables.$c-mostaza;
+        display: flex;
+        justify-content: center;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+        background-color: variables.$c-rosita;
+        &:hover{
+            background-color: variables.$c-clarito;
+            color: variables.$c-mostaza;
             }
-        }
     }
+}
 
 .card-img1 {
     width: 75%;

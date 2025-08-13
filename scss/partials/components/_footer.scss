@@ -11,29 +11,30 @@
     p{
         font-family: "Libre Baskerville", serif;
         padding: 8px;
-        margin: 8px;
-    }
-        a {
-        padding: 8px;
-        margin: 2px;
-        display: flex;
-        flex-direction: row;
-        text-decoration: none;
-        color: #6B553D;
-        text-align: center;
-        align-self: center;
-        &:hover{
-            color:#d67747;
-            animation-name: hover-color;
-            animation-duration: 0.5s;
-            animation-iteration-count: 1;
-            }
-        img{
-            padding: 3px;
+        margin: 8px; 
+        }       
+}
+        
+a {
+    padding: 8px;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #6B553D;
+    text-align: center;
+    align-self: center;
+    &:hover{
+        color:#d67747;
+        animation-name: hover-color;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
         }
+}
 
-    }
-  }
+img{
+    padding: 3px;
+}
 
 figure{
     display: flex;

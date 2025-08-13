@@ -7,7 +7,7 @@ header {
     padding: 2px;
     .bg-marto{
         background-image: linear-gradient(to right, variables.$c-clarito, variables.$c-rosita);
-}
+        }
 }
 
 .navbar-brand{
@@ -20,6 +20,5 @@ header {
 }
 
 .btn-buscar{
-    @extend %button-brown;
-    
+    @extend %button-brown;    
 }
