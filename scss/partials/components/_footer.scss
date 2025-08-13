@@ -1,3 +1,5 @@
+@use "../utilities/keyframes";
+
 /* Redes */
 
 .foot-mio{
@@ -21,7 +23,10 @@
         text-align: center;
         align-self: center;
         &:hover{
-            color:#d67747
+            color:#d67747;
+            animation-name: hover-color;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
             }
         img{
             padding: 3px;

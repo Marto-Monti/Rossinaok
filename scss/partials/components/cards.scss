@@ -1,6 +1,7 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
 
+
 .card-container{
     @include mixins.flex (row, space-between, center);
     padding: 24px;
@@ -12,16 +13,22 @@
         border: 1px solid grey;
         border-radius: 3px;
         padding: 2px;
-        h5{ 
-            text-align: center;
-            .img-card {
-                width: 70%;
-                padding: 2px;
-                align-self: center;
+        &:hover{
+            transform: scale(1.02);
+        }
+
+h5{ 
+    text-align: center;
+    .img-card {
+            width: 70%;
+            padding: 2px;
+            align-self: center;
+                
+              }
             }
           }  
         }
-    }
+    
 
 
 .card-body {

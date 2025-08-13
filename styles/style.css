@@ -15,6 +15,14 @@ body {
 
 /*  font-family: "Libre Baskerville", serif; */
 /*  font-family: "Montserrat", sans-serif; */
+@keyframes hover-color {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Redes */
 .foot-mio {
   padding: 10vh;
@@ -40,6 +48,9 @@ body {
 }
 .foot-mio a:hover {
   color: #d67747;
+  animation-name: hover-color;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
 }
 .foot-mio a img {
   padding: 3px;
@@ -204,8 +215,12 @@ header .bg-marto {
   background-image: linear-gradient(to right, #E8CFC1, #D67747);
 }
 
-.img-brand {
-  width: 8%;
+.navbar-brand {
+  width: 100px;
+  height: 60px;
+}
+.navbar-brand .img-brand {
+  width: 90%;
   padding: 2px;
 }
 
@@ -224,6 +239,9 @@ header .bg-marto {
   border: 1px solid grey;
   border-radius: 3px;
   padding: 2px;
+}
+.card-container .card:hover {
+  transform: scale(1.02);
 }
 .card-container .card h5 {
   text-align: center;

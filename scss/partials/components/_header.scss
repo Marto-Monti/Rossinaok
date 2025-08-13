@@ -10,11 +10,13 @@ header {
 }
 }
 
-
-.img-brand {
-    width: 8%;
+.navbar-brand{
+    width: 100px;
+    height: 60px;
+    .img-brand {
+    width: 90%;
     padding: 2px;
-       
+        }
 }
 
 .btn-buscar{
