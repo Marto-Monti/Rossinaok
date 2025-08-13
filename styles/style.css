@@ -161,15 +161,13 @@ figure img {
 .sec-cambios, .faq {
   margin: 8px;
   padding: 16px;
+  text-align: center;
 }
-.sec-cambios .div-cambio, .faq .div-cambio {
-  display: flex;
-}
-.sec-cambios .div-cambio .cambio-hover, .faq .div-cambio .cambio-hover {
-  padding: 1px;
+.sec-cambios .cambio-hover, .faq .cambio-hover {
+  display: inline-block;
   color: #A87008;
 }
-.sec-cambios .div-cambio .cambio-hover:hover, .faq .div-cambio .cambio-hover:hover {
+.sec-cambios .cambio-hover:hover, .faq .cambio-hover:hover {
   color: #E8CFC1;
 }
 

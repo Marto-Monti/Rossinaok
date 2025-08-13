@@ -93,17 +93,16 @@ figure{
 .sec-cambios{
     margin: 8px;
     padding: 16px;
-    .div-cambio{
-    display: flex;
+    text-align: center;
     .cambio-hover{
-        padding: 1px;
+        display: inline-block;
         color: variables.$c-mostaza;
         &:hover{
             color: variables.$c-clarito;
-            }
         }
-    }    
-}
+    }
+}    
+
 
 .faq{
     @extend .sec-cambios;
