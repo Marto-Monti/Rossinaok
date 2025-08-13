@@ -1,10 +1,20 @@
+@use "../utilities/mixins";
 @use "../utilities/variables";
+@use "../utilities/extend";
 
 
 // Texto principal Index
 
 h1{
-    padding: 36px;
+    margin: 8px;
+    padding: 12px;
+    font-family: "Libre Baskerville", serif;
+    color: variables.$c-mostaza;
+    text-align: center;
+}
+
+h2{
+    padding: 10px;
     text-align: center;
 }
 
@@ -31,13 +41,14 @@ h1{
 
 figure{
     padding: 16px;
-} 
-img{ 
+    img{ 
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 80%;
-}
+    }
+} 
+
 
 /* página productos*/
 
@@ -65,57 +76,43 @@ img{
 //Formulario
 
 .formu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include mixins.flex(row, center, center);
     .formulario-marto {
+        @extend .formu;
         margin: 35px;
         padding: 35px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
         width: 60%;
         .btn-formu{
-            margin: 2px;
-            padding: 4px;
-            color: black;
-            background-color: variables.$c-gris;
-            border: 0.5px black solid;
-            font-family: "Libre Baskerville", serif;
-            &:hover{
-                background-color: variables.$c-clarito;
-            }
+            @extend %button-brown;
         }
-
+     }
     }
-}
- 
 
 /* página Cambios & FAQ´S*/
 
 .sec-cambios{
     margin: 8px;
     padding: 16px;
-    
-}
-
-.div-cambio{
+    .div-cambio{
     display: flex;
-
-}
-.cambio-hover{
-    padding: 1px;
-    color: variables.$c-mostaza;
-    &:hover{
-        color: variables.$c-clarito;
-  }
+    .cambio-hover{
+        padding: 1px;
+        color: variables.$c-mostaza;
+        &:hover{
+            color: variables.$c-clarito;
+            }
+        }
+    }    
 }
 
 .faq{
-    width: 70%;
-    margin: 12px;
-    padding: 12px;
+    @extend .sec-cambios;
+    @include mixins.flex (column, center, center);
+    .acc-marto{
+        width: 80%;
+    }
 }
+
 
 .accordion-marto{
   --bs-accordion-color: var(--bs-body-color);

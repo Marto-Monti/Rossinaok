@@ -1,36 +1,40 @@
+@use "../utilities/mixins";
 @use "../utilities/variables";
 
 .card-container{
-    
+    @include mixins.flex (row, space-between, center);
     padding: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     gap: 16px;
     flex-wrap: wrap;
     .card{
         width: 40vh;
+        height: 80vh;
         border: 1px solid grey;
         border-radius: 3px;
-        padding: 8px;
-        .img-card {
-            width: 70%;
-            padding: 8px;
-            align-self: center;
-            
+        padding: 2px;
+        h5{ 
+            text-align: center;
+            .img-card {
+                width: 70%;
+                padding: 2px;
+                align-self: center;
+            }
+          }  
         }
     }
-}           
 
 
 .card-body {
+    padding: 2px;
     font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    .card-text {
-        font-size: 1rem;
+    p{
+        text-align: center;
     }
+}        
 
-.btn-edit {
+.btn-detalles{
+    @include mixins.flex(row, center, center);    
+    .btn-edit {
             display: flex;
             justify-content: center;
             font-family: "Libre Baskerville", serif;
@@ -45,8 +49,9 @@
         }
     }
 
-         
-
+.card-img1 {
+    width: 75%;
+}
 
 
 

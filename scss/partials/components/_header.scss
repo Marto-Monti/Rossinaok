@@ -1,16 +1,15 @@
 @use "../utilities/variables";
+@use "../utilities/extend";
 
 /*Barra de navegacion*/ 
 
 header {
     padding: 2px;
     .bg-marto{
-        background-color: variables.$c-clarito;
+        background-image: linear-gradient(to right, variables.$c-clarito, variables.$c-rosita);
 }
 }
-.container-fluid{
-    //background-color: variables.$c-clarito;
-}
+
 
 .img-brand {
     width: 8%;
@@ -18,23 +17,7 @@ header {
        
 }
 
-.btn-buscar {
-    margin: 2px;
-    padding: 4px;
-    color: black;
-    background-color: variables.$c-gris;
-    border: 0.5px black solid;
-    font-family: "Libre Baskerville", serif;
-    &:hover{
-        background-color: variables.$c-clarito;
-    }
-}
-
-.bg-marto{
-    a{
-    color: variables.$c-gris;
-    &:hover{
-    color: variables.$c-mostaza ;
-    }
-  }
+.btn-buscar{
+    @extend %button-brown;
+    
 }

@@ -54,8 +54,29 @@ figure .imgfoot {
   width: 50%;
 }
 
+.btn-buscar, .formu .formulario-marto .btn-formu {
+  margin: 2px;
+  padding: 4px;
+  color: #e8cfc1;
+  background-color: #3A2812;
+  border: 0.5px black solid;
+  font-family: "Libre Baskerville", serif;
+}
+.btn-buscar:hover, .formu .formulario-marto .btn-formu:hover {
+  background-color: #e8cfc1;
+  color: #D67747;
+}
+
 h1 {
-  padding: 36px;
+  margin: 8px;
+  padding: 12px;
+  font-family: "Libre Baskerville", serif;
+  color: #A87008;
+  text-align: center;
+}
+
+h2 {
+  padding: 10px;
   text-align: center;
 }
 
@@ -82,8 +103,7 @@ h1 {
 figure {
   padding: 16px;
 }
-
-img {
+figure img {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -112,53 +132,41 @@ img {
   color: #A87008;
 }
 
-.formu {
+.formu, .formu .formulario-marto {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .formu .formulario-marto {
   margin: 35px;
   padding: 35px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   width: 60%;
 }
-.formu .formulario-marto .btn-formu {
-  margin: 2px;
-  padding: 4px;
-  color: black;
-  background-color: #6B553D;
-  border: 0.5px black solid;
-  font-family: "Libre Baskerville", serif;
-}
-.formu .formulario-marto .btn-formu:hover {
-  background-color: #E8CFC1;
-}
-
 /* página Cambios & FAQ´S*/
-.sec-cambios {
+.sec-cambios, .faq {
   margin: 8px;
   padding: 16px;
 }
-
-.div-cambio {
+.sec-cambios .div-cambio, .faq .div-cambio {
   display: flex;
 }
-
-.cambio-hover {
+.sec-cambios .div-cambio .cambio-hover, .faq .div-cambio .cambio-hover {
   padding: 1px;
   color: #A87008;
 }
-.cambio-hover:hover {
+.sec-cambios .div-cambio .cambio-hover:hover, .faq .div-cambio .cambio-hover:hover {
   color: #E8CFC1;
 }
 
 .faq {
-  width: 70%;
-  margin: 12px;
-  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq .acc-marto {
+  width: 80%;
 }
 
 .accordion-marto {
@@ -193,7 +201,7 @@ header {
   padding: 2px;
 }
 header .bg-marto {
-  background-color: #E8CFC1;
+  background-image: linear-gradient(to right, #E8CFC1, #D67747);
 }
 
 .img-brand {
@@ -201,53 +209,46 @@ header .bg-marto {
   padding: 2px;
 }
 
-.btn-buscar {
-  margin: 2px;
-  padding: 4px;
-  color: black;
-  background-color: #6B553D;
-  border: 0.5px black solid;
-  font-family: "Libre Baskerville", serif;
-}
-.btn-buscar:hover {
-  background-color: #E8CFC1;
-}
-
-.bg-marto a {
-  color: #6B553D;
-}
-.bg-marto a:hover {
-  color: #A87008;
-}
-
 .card-container {
-  padding: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 24px;
   gap: 16px;
   flex-wrap: wrap;
 }
 .card-container .card {
   width: 40vh;
+  height: 80vh;
   border: 1px solid grey;
   border-radius: 3px;
-  padding: 8px;
+  padding: 2px;
 }
-.card-container .card .img-card {
+.card-container .card h5 {
+  text-align: center;
+}
+.card-container .card h5 .img-card {
   width: 70%;
-  padding: 8px;
+  padding: 2px;
   align-self: center;
 }
 
 .card-body {
+  padding: 2px;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
 }
-.card-body .card-text {
-  font-size: 1rem;
+.card-body p {
+  text-align: center;
 }
-.card-body .btn-edit {
+
+.btn-detalles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn-detalles .btn-edit {
   display: flex;
   justify-content: center;
   font-family: "Libre Baskerville", serif;
@@ -256,9 +257,13 @@ header .bg-marto {
   text-decoration: none;
   background-color: #D67747;
 }
-.card-body .btn-edit:hover {
+.btn-detalles .btn-edit:hover {
   background-color: #E8CFC1;
   color: #A87008;
+}
+
+.card-img1 {
+  width: 75%;
 }
 
 /*# sourceMappingURL=style.css.map */

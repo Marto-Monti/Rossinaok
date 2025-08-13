@@ -1,0 +1,12 @@
+%button-brown {
+    margin: 2px;
+    padding: 4px;
+    color: #e8cfc1;
+    background-color: #3A2812;
+    border: 0.5px black solid;
+    font-family: "Libre Baskerville", serif;
+    &:hover{
+        background-color: #e8cfc1;
+        color: #D67747;
+    }
+}
