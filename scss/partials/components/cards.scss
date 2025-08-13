@@ -4,7 +4,7 @@
 
 .card-container{
     @include mixins.flex (row, space-between, center);
-    padding: 24px;
+    padding: 54px;
     gap: 16px;
     flex-wrap: wrap;
     .card{
